@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "monolit",
+    "packageName": "monolit.ua",
+    "packageFolder": "monolit/ua",
+    "serverPort": 7575,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.2",
+    "jwtSecretKey": "NWFkNmU4MzA5YmY4MGYzMWM2ZWZkNjVjN2U5OGY2Y2FlOGY0ZTM5YjU5MThiNTIyOGExODZmZDdkNmEzODM2MjZiZTVmODczZTI1ZmQ2Y2VhOTgxOTQyMmJhNzgwZDk2MWNiZmM0NmRhNjhjMWRlN2UzMmY0OWY3ZjAwNzViZWY=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "ZlobniyVinya",
+  "repository-name": "jhipster-sample-monolit"
+}

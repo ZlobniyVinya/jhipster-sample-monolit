@@ -1,0 +1,20 @@
+version: '2'
+services:
+    monolit-app:
+        image: monolit
+        environment:
+            - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://monolit-postgresql:5432/monolit
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_JEST_URI=http://monolit-elasticsearch:9200
+        ports:
+            - 7575:7575
+    monolit-postgresql:
+        extends:
+            file: postgresql.yml
+            service: monolit-postgresql
+    monolit-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: monolit-elasticsearch
